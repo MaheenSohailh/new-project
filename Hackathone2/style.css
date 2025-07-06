@@ -7,7 +7,7 @@
 
 /* ////////////////// questions  */
 /* ////////////////// FAQs */
-.faqs{margin-top: 10%;}
+
 .faqs .questions {
     padding: 5em !important;
 }
@@ -16,30 +16,29 @@
     position: relative;
 }
 
-.downArrow,
-.upArrow {
+.plus,
+.minus {
     font-size: 1.5em;
     position: absolute;
     top: .5em;
     right: 1em;
 }
 
-.upArrow {
+.minus {
     z-index: -1;
 }
 
-.question:hover .upArrow {
+.question:hover .minus {
     z-index: 1;
 }
 
-.question:hover .downArrow {
+.question:hover .plus {
     z-index: -1;
 }
 
 
 .question h3 {
     background-color: greenyellow;
-    color: white;
     padding: 1em;
 }
 
@@ -55,11 +54,13 @@
      opacity: 1;
     height: max-content;
 }
-
+ hr{ color: white;}
 
 
 /* ///// media query */
-@media ( min-width:700px) {
-
+@media ( max-width:870px) {
+ .hide{
+    display: none;
+ }
     
 }
